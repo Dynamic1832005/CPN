@@ -1,0 +1,38 @@
+@echo off
+title Auto Upload Project to GitHub
+echo ===============================
+echo   Uploading Project to GitHub
+echo ===============================
+echo.
+
+REM ==== Set your GitHub info here ====
+set REPO_URL=https://github.com/Dynamic1832005/CPN.git
+set USER_NAME="Nyi Nyi Htwe"
+set USER_EMAIL="dynamic1832005@gmail.com"
+set PROJECT_PATH=D:\CPN
+
+REM ==== Change to project folder ====
+cd /d %PROJECT_PATH%
+
+REM ==== Initialize Git if not already ====
+if not exist ".git" (
+    echo Initializing new git repository...
+    git init
+    git config user.name %USER_NAME%
+    git config user.email %USER_EMAIL%
+    git remote add origin %REPO_URL%
+)
+
+REM ==== Add and Commit changes ====
+git add .
+git commit -m "Auto update commit"
+
+REM ==== Push to GitHub ====
+echo.
+echo Uploading to GitHub...
+git branch -M main
+git push -u origin main
+
+echo.
+echo ✅ Upload Complete!
+pause

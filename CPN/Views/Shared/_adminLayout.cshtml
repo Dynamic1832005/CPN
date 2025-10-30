@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewBag.Title - CPN</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            /* Flex container for sticky footer */
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Fixed navbar */
+        nav.navbar.fixed-top {
+            height: 80px; /* Bootstrap default */
+            line-height: 56px;
+            z-index: 1030;
+        }
+
+        /* Main content grows to fill available space */
+        main.container {
+            flex: 1 0 auto;
+            padding-top: 70px; /* avoid content behind navbar */
+            padding-bottom: 20px; /* some space before footer */
+        }
+
+        /* Footer sticks at bottom */
+        footer.footer {
+            flex-shrink: 0;
+            background: linear-gradient(to right, #212529, #343a40);
+            color: white;
+            border-top: 3px solid #495057;
+            padding: 20px;
+        }
+
+            footer.footer a:hover {
+                text-decoration: underline;
+                color: #ffc107 !important;
+            }
+
+            footer.footer h5, footer.footer h6 {
+                font-weight: 600;
+            }
+
+        .nav-link i {
+            margin-right: 5px;
+        }
+
+        .navbar-brand i {
+            margin-right: 8px;
+            color: #ffc107; /* bright accent color */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="@Url.Action("Dashboard", "Admin")">
+                <h2 style="color: #ffc107;"><i class="fas fa-compass text-warning"></i> IT Career Path Navigator</h2>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+                    aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Dashboard", "Admin")">
+                            <i class="fas fa-home"></i> Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("ManageStudents", "Admin")">
+                            <i class="fas fa-users-cog"></i> Manage Students
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-briefcase"></i> Manage Careers
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="@Url.Action("ManageJobs", "Admin", new { department = "CS" })">Computer Science</a></li>
+                            <li><a class="dropdown-item" href="@Url.Action("ManageJobs", "Admin", new { department = "CT" })">Computer Technology</a></li>
+                        </ul>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("ManagePosts", "Admin")">
+                            <i class="fas fa-video"></i> Manage Video
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("ViewFeedback", "Admin")">
+                            <i class="fas fa-comments"></i> View Feedback
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-danger" href="@Url.Action("Logout", "Account")">
+                            <i class="fas fa-sign-out-alt"></i> Logout
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="container mt-4">
+        @RenderBody()
+    </main>
+
+    <footer class="footer text-light">
+        <div class="container py-5">
+            <div class="row text-center">
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h5 class="text-uppercase mb-2">Career Path Navigator</h5>
+                    <p class="mb-0">Guiding UCS students to brighter futures</p>
+                </div>
+                <div class="col-md-4 mb-3 mb-md-0">
+                    <h6 class="text-uppercase">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="@Url.Action("Dashboard", "Admin")" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="@Url.Action("ManageStudents", "Admin")" class="text-light text-decoration-none">Manage Students</a></li>
+                       
+                        <li><a href="@Url.Action("ManagePosts", "Admin")" class="text-light text-decoration-none">Manage Video</a></li>
+                        <li><a href="@Url.Action("ViewFeedback", "Admin")" class="text-light text-decoration-none">View Feedback</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6 class="text-uppercase">Connect with us</h6>
+                    <a href="#" class="text-light me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="text-light me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="text-light"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+            <hr class="bg-secondary mt-4" />
+            <div class="text-center">
+                <small>&copy; @DateTime.Now.Year Career Path Navigator. All Rights Reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

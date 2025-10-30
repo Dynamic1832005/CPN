@@ -1,0 +1,124 @@
+﻿@model List<CPN.Models.Post>
+@{
+    ViewBag.Title = "Daily Posts";
+    Layout = "~/Views/Shared/_studentLayout.cshtml";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<style>
+    .post-card {
+        margin-bottom: 1.75rem;
+        border-radius: 12px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        background-color: #fff;
+        width: 100%;
+        max-width: 900px; /* fixed width */
+        min-height: 180px; /* minimum height */
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .post-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.75rem;
+    }
+
+    .post-title {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #212529;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        text-decoration: none;
+    }
+
+        .post-title:hover {
+            color: #007bff;
+        }
+
+        .post-title i {
+            color: #3498db;
+            font-size: 1.1rem;
+        }
+
+    .post-date {
+        font-size: 0.9rem;
+        color: #6c757d;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        white-space: nowrap;
+        user-select: none;
+    }
+
+        .post-date i {
+            color: #3498db;
+        }
+
+    video {
+        width: 100%;
+        max-height: 300px;
+        border-radius: 12px;
+        margin: 1rem 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .post-description {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #444;
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+
+    h2 i {
+        margin-right: 8px;
+        color: #3498db;
+    }
+</style>
+
+<div class="container mt-5">
+    <h2 class="mb-4 text-primary">
+        <i class="fa-solid fa-clapperboard"></i> Guideline Videos
+    </h2>
+
+    @if (Model == null || !Model.Any())
+    {
+        <div class="alert alert-info text-center">
+            😔 No posts available.
+        </div>
+    }
+    else
+    {
+        foreach (var post in Model)
+        {
+            <div class="post-card">
+                <div class="post-header">
+                    <p class="post-title">
+                        <i class="fa-solid fa-file-lines"></i> @post.Title
+                    </p>
+                    <div class="post-date">
+                        <i class="fa-regular fa-calendar-days"></i> @post.CreatedAt.ToString("yyyy-MM-dd")
+                    </div>
+                </div>
+
+                @if (!string.IsNullOrEmpty(post.VideoPath))
+                {
+                    <video controls preload="metadata" aria-label="Video related to @post.Title">
+                        <source src="@Url.Content(post.VideoPath)" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                }
+
+                <p class="post-description">
+                    @Html.Raw(post.Description)
+                </p>
+            </div>
+        }
+    }
+</div>

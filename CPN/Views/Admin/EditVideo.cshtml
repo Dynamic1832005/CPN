@@ -1,0 +1,38 @@
+﻿@model CPN.Models.ManageVideo
+
+@{
+    ViewBag.Title = "Edit Video";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<h2>Edit Video</h2>
+
+@using (Html.BeginForm("EditVideo", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.Id)
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.Title)
+        @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.Title)
+    </div>
+
+    <div class="form-group">
+        <label>Replace Video File (optional)</label>
+        <input type="file" name="file" accept="video/mp4" />
+        @Html.ValidationMessage("file")
+    </div>
+
+    <p>Current Video:</p>
+    <video width="320" controls>
+        <source src="@Model.VideoPath" type="video/mp4" />
+        Your browser does not support the video tag.
+    </video>
+
+    <br />
+    <br />
+
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+    <a href="@Url.Action("ManageVideos", "Admin")" class="btn btn-secondary">Cancel</a>
+}

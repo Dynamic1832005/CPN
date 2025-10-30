@@ -1,0 +1,59 @@
+﻿@model IEnumerable<CPN.Models.AppUser>
+
+@{
+    ViewBag.Title = "Manage Students";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<!-- Font Awesome for icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<h2 class="mb-4 text-primary text-center">
+    <i class="fas fa-user-graduate"></i> Students List
+</h2>
+
+<div class="table-responsive">
+    <table class="table table-hover table-bordered align-middle shadow-sm">
+        <thead class="table-dark text-center">
+            <tr>
+                <th><i class="fas fa-user"></i> Student Name</th>
+                <th><i class="fas fa-envelope"></i> Email</th>
+                <th><i class="fas fa-lock"></i> Password</th>
+                <th><i class="fas fa-cogs"></i> Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (!Model.Any())
+            {
+                <tr>
+                    <td colspan="4" class="text-center text-muted">No students found.</td>
+                </tr>
+            }
+            else
+            {
+                foreach (var student in Model)
+                {
+                    <tr>
+                        <td>@student.Username</td>
+                        <td>@student.Email</td>
+                        <td>@student.Password</td>
+                        <td class="text-center">
+                            <a href="@Url.Action("EditStudent", "Admin", new { id = student.Id })"
+                               class="btn btn-sm btn-outline-primary me-2"
+                               title="Edit">
+                                <i class="fas fa-edit"></i>
+                            </a>
+
+                            <a href="@Url.Action("DeleteStudent", "Admin", new { id = student.Id })"
+                               class="btn btn-sm btn-outline-danger"
+                               title="Delete"
+                               onclick="return confirm('Are you sure you want to delete this student?');">
+                                <i class="fas fa-trash-alt"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>

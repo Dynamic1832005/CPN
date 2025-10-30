@@ -1,0 +1,194 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - CPN</title>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <!-- Font Awesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+          integrity="sha512-m3KmKBG8qhxDj1Je+R2qW4HiO0ciX8oJSZso0xGwF4Q/C8wEUKP1BqEx1+VCmtzU0k+8rK0+z2gyw9llIlWqOg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Navbar styling */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1030;
+            padding: 18px 20px; /* increase navbar height */
+            font-size: 18px;
+        }
+
+        /* Adjust body so content not hidden under navbar */
+        body {
+            padding-top: 90px; /* adjust for increased navbar height */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Project Title (Brand) */
+        .navbar-brand {
+            font-size: 35px; /* bigger title font */
+            font-weight: bold;
+            color: #00e0ff !important; /* bright modern accent */
+            letter-spacing: 1px;
+        }
+
+            /* Brand icon styling */
+            .navbar-brand i {
+                margin-right: 10px;
+                font-size: 28px;
+                color: #00e0ff;
+            }
+
+        /* Nav links styling */
+        .navbar-nav .nav-link {
+            font-size: 17px;
+            padding: 10px 15px;
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+
+            .navbar-nav .nav-link:hover {
+                color: #00e0ff !important;
+                transform: translateY(-2px);
+            }
+
+        /* Footer styling */
+        .footer {
+            background-color: #1d1d1d;
+            color: #d1d1d1;
+            padding-top: 40px;
+            padding-bottom: 30px;
+            font-size: 14px;
+            margin-top: 60px;
+        }
+
+            .footer h5 {
+                color: #ffffff;
+                margin-bottom: 15px;
+            }
+
+            .footer .footer-link {
+                color: #d1d1d1;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 8px;
+                transition: color 0.3s ease;
+            }
+
+                .footer .footer-link:hover {
+                    color: #00e0ff;
+                    text-decoration: underline;
+                }
+
+            .footer p {
+                margin: 0 0 10px;
+            }
+
+            .footer hr {
+                border-top: 1px solid #444;
+            }
+
+        @@media (max-width: 767px) {
+            .footer .row > div {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Fixed Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg">
+        <div class="container-fluid">
+            <!-- Navbar Brand with icon -->
+            <a class="navbar-brand" href="@Url.Action("Index", "Home")">
+                <i class="fas fa-compass"></i> IT Career Path Navigator
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")">
+                            <i class="fas fa-house"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("About", "Home")">
+                            <i class="fas fa-circle-info"></i> About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Contact", "Home")">
+                            <i class="fas fa-phone"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="@Url.Action("Login", "Account")">
+                            <i class="fas fa-right-to-bracket"></i> Login
+                        </a>
+                    </li>
+                </ul>
+                <span class="navbar-text text-light ms-3">
+                    @if (Session["Username"] != null)
+                    {
+                        <text>Hello, @Session["Username"]</text>
+                        <a href="@Url.Action("Logout", "Account")" class="btn btn-sm btn-outline-light ms-2">Logout</a>
+                    }
+                </span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        @RenderBody()
+    </div>
+
+    <!-- Modern Footer -->
+    <footer class="footer text-light">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-md-4">
+                    <h5>About CPN</h5>
+                    <p>
+                        Career Path Navigator helps students explore IT career paths through interactive quizzes and personalized suggestions.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="@Url.Action("Index", "Home")" class="footer-link"><i class="fas fa-house me-2"></i>Home</a></li>
+                        <li><a href="@Url.Action("About", "Home")" class="footer-link"><i class="fas fa-circle-info me-2"></i>About</a></li>
+                        <li><a href="@Url.Action("Contact", "Home")" class="footer-link"><i class="fas fa-phone me-2"></i>Contact</a></li>
+                        <li><a href="@Url.Action("Login", "Account")" class="footer-link"><i class="fas fa-right-to-bracket me-2"></i>Login</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Connect</h5>
+                    <p>Email: Dynamic@gmail.com</p>
+                    <p>Phone: +95 9 981 804 641</p>
+                </div>
+            </div>
+            <hr class="bg-light" />
+            <div class="text-center pb-2">
+                &copy; @DateTime.Now.Year CPN. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+
+    @Scripts.Render("~/bundles/jqueryval")
+
+</body>
+</html>

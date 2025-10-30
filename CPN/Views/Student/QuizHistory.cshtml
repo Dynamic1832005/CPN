@@ -1,0 +1,165 @@
+﻿@model IEnumerable<CPN.Models.QuizResult>
+
+@{
+    ViewBag.Title = "Quiz History";
+    Layout = "~/Views/Shared/_studentLayout.cshtml";
+
+    // Find max score(s)
+    int maxScore = 0;
+    List<string> bestJobs = new List<string>();
+    if (Model != null && Model.Any())
+    {
+        maxScore = Model.Max(q => q.Score);
+        bestJobs = Model
+            .Where(q => q.Score == maxScore)
+            .Select(q => q.JobTitle)
+            .Distinct()
+            .ToList();
+    }
+
+    // Prepare grouped data
+    var grouped = Model?
+        .OrderByDescending(q => q.AttemptDate)
+        .GroupBy(q => q.AttemptDate.ToString("dd MMM yyyy HH:mm"))
+        .ToList();
+}
+
+<!-- Font Awesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<h2 class="results-heading">
+    <i class="fas fa-history"></i> Quiz History for @Session["Username"]
+</h2>
+
+@if (Model == null || !Model.Any())
+{
+    <div style="text-align:center; font-size:1.2rem; color:#6c757d; margin-top:20px;">
+        😔 No quiz attempts found.
+    </div>
+}
+else
+{
+    <div class="result-summary">
+        <strong><i class="fas fa-star"></i> Best Fit Career Path(s):</strong>
+        @foreach (var job in bestJobs)
+        {
+            <a href="@Url.Action("JobDetails", "Student", new { title = job })" class="job-link">
+                <i class="fas fa-briefcase"></i> @job
+            </a>
+        }
+        <small style="margin-left:auto;">🏆 Highest Score: @maxScore correct answer(s)</small>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th><i class="fas fa-layer-group"></i> Department</th>
+                <th><i class="fas fa-briefcase"></i> Job Title</th>
+                <th><i class="fas fa-check-circle"></i> Score</th>
+                <th><i class="fas fa-calendar-alt"></i> Attempt Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (grouped != null)
+            {
+                int colorIndex = 0;
+                string[] colors = { "#ffe8e8", "#e8f9ff", "#e9ffe8", "#fff5e8", "#f5e8ff" }; // bright pastel tones
+
+                foreach (var group in grouped)
+                {
+                    string bg = colors[colorIndex % colors.Length];
+                    foreach (var item in group)
+                    {
+                        <tr style="background-color:@bg">
+                            <td>@item.Department</td>
+                            <td>@item.JobTitle</td>
+                            <td>@item.Score</td>
+                            <td>@group.Key</td>
+                        </tr>
+                    }
+                    colorIndex++;
+                }
+            }
+        </tbody>
+    </table>
+}
+
+<style>
+    /* Gradient title */
+    .results-heading {
+        text-align: center;
+        font-weight: 800;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+        background: linear-gradient(90deg, #ff6a00, #ee0979, #007bff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 2rem;
+    }
+
+    /* Highlighted best career */
+    .result-summary {
+        background: linear-gradient(135deg, #d4fc79, #96e6a1);
+        color: #0f5132;
+        border-radius: 14px;
+        padding: 18px 20px;
+        margin-bottom: 30px;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        font-size: 1.1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .job-link {
+        text-decoration: none;
+        background-color: #fff;
+        padding: 6px 14px;
+        border-radius: 10px;
+        color: #0f5132;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.3s ease;
+        border: 2px solid #96e6a1;
+    }
+
+        .job-link:hover {
+            background-color: #96e6a1;
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+    /* Table */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 30px;
+        background: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    thead {
+        background: linear-gradient(90deg, #007bff, #00c6ff);
+        color: #fff;
+    }
+
+    th, td {
+        padding: 14px 18px;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    tbody tr:hover {
+        background-color: #f0f8ff !important;
+        transform: scale(1.01);
+        transition: 0.2s ease-in-out;
+    }
+</style>

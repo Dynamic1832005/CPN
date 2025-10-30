@@ -1,0 +1,120 @@
+﻿@model List<CPN.Models.Post>
+@{
+    ViewBag.Title = "All Posts";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet" />
+
+<style>
+    .post-card {
+        border-radius: 12px;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        }
+
+    .post-title {
+        font-weight: 600;
+        font-size: 1.25rem;
+    }
+
+    .post-description {
+        color: #555;
+        line-height: 1.6;
+    }
+
+    .post-date {
+        font-size: 0.9rem;
+        color: #888;
+    }
+
+    .btn-delete {
+        border: none;
+        background: transparent;
+        color: #dc3545;
+        cursor: pointer;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+        padding: 0;
+    }
+
+        .btn-delete:hover {
+            color: #a71d2a;
+        }
+
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-primary fw-bold">
+            <i class="bi bi-collection-play-fill"></i> All Videos
+        </h2>
+        <a href="@Url.Action("AddPost", "Admin")" class="btn btn-primary rounded-pill shadow-sm">
+            <i class="bi bi-plus-circle-fill"></i> Add New Video
+        </a>
+    </div>
+
+    @if (Model != null && Model.Count > 0)
+    {
+        <div class="row">
+            @foreach (var post in Model)
+            {
+                <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="card post-card shadow-sm h-100 border-0">
+                        @if (!string.IsNullOrEmpty(post.VideoPath))
+                        {
+                            <video class="card-img-top rounded-top" style="max-height: 220px; object-fit: cover;" controls>
+                                <source src="@Url.Content(post.VideoPath)" type="video/mp4" />
+                                Your browser does not support the video tag.
+                            </video>
+                        }
+                        else
+                        {
+                            <div class="bg-light d-flex justify-content-center align-items-center rounded-top" style="height: 220px;">
+                                <i class="bi bi-file-earmark-text display-4 text-secondary"></i>
+                            </div>
+                        }
+
+                        <div class="card-body">
+                            <h5 class="post-title text-dark">
+                                <i class="bi bi-pencil-square text-primary"></i> @post.Title
+                            </h5>
+                            <p class="post-description">@post.Description</p>
+                        </div>
+
+                        <div class="card-footer bg-white border-0">
+                            <p class="post-date mb-0">
+                                <i class="bi bi-calendar-event"></i> @post.CreatedAt.ToString("MMM dd, yyyy")
+                            </p>
+
+                            @using (Html.BeginForm("DeletePost", "Admin", FormMethod.Post, new { onsubmit = "return confirm('Are you sure you want to delete this post?');" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                @Html.Hidden("id", post.Id)
+                                <button type="submit" class="btn-delete" title="Delete Post">
+                                    <i class="bi bi-trash-fill"></i>
+                                </button>
+                            }
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning text-center py-4 rounded shadow-sm">
+            <i class="bi bi-exclamation-circle display-6 d-block mb-2"></i>
+            <strong>No posts available.</strong>
+        </div>
+    }
+</div>

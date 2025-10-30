@@ -1,0 +1,944 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CPN\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|d:\\cpn\\cpn\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\shared\\_studentlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\shared\\_studentlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\csquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\csquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\viewfeedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\viewfeedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\addcsjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\addcsjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\models\\csjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\models\\csjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\home\\contact.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\models\\ctjobquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\models\\ctjobquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\models\\appusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\models\\appusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\addctjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\addctjob.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\manageposts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\manageposts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\managequestions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\managequestions.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\managejobs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\managejobs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\csresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\csresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\feedback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\jobdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\jobdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\postdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\postdetails.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\posts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\posts.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\models\\csjobquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\models\\csjobquestion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\models\\ctjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\models\\ctjob.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\models\\feedback.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\models\\jobviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\models\\jobviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\addpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\addpost.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\addquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\addquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\editstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\editstudent.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\editvideo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\editvideo.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\managestudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\managestudents.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\ctquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\ctquiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\ctresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\ctresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\quiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\quiz.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\This PC\\AppData\\Local\\Temp\\jvv2juli..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\student\\quizhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\student\\quizhistory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\images\\career.png||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\images\\career.png||{177559E0-D141-11D0-92DF-00A0C9138C45}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\addctquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\addctquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\admin\\addcsquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\admin\\addcsquestion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|D:\\CPN\\cpn\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{865A63D9-F4BC-4FAA-9FA7-6B1B9111345A}|CPN\\CPN.csproj|solutionrelative:cpn\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T20:08:04.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "jvv2juli..sql",
+              "DocumentMoniker": "C:\\Users\\This PC\\AppData\\Local\\Temp\\jvv2juli..sql",
+              "ToolTip": "C:\\Users\\This PC\\AppData\\Local\\Temp\\jvv2juli..sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-08-14T18:34:34.107Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "AppUsers.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Models\\AppUsers.cs",
+              "RelativeDocumentMoniker": "CPN\\Models\\AppUsers.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Models\\AppUsers.cs",
+              "RelativeToolTip": "CPN\\Models\\AppUsers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T02:26:36.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_adminLayout.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Shared\\_adminLayout.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Shared\\_adminLayout.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Shared\\_adminLayout.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Shared\\_adminLayout.cshtml",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAABEAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T15:32:08.683Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_studentLayout.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Shared\\_studentLayout.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Shared\\_studentLayout.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Shared\\_studentLayout.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Shared\\_studentLayout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T10:23:50.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T15:40:08.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CSquiz.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\CSquiz.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\CSquiz.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\CSquiz.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\CSquiz.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-22T01:17:58.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CTJobQuestion.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Models\\CTJobQuestion.cs",
+              "RelativeDocumentMoniker": "CPN\\Models\\CTJobQuestion.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Models\\CTJobQuestion.cs",
+              "RelativeToolTip": "CPN\\Models\\CTJobQuestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:12:17.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-15T15:19:07.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Web.config",
+              "RelativeDocumentMoniker": "CPN\\Views\\Web.config",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Web.config",
+              "RelativeToolTip": "CPN\\Views\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-19T14:36:17.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CSJob.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Models\\CSJob.cs",
+              "RelativeDocumentMoniker": "CPN\\Models\\CSJob.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Models\\CSJob.cs",
+              "RelativeToolTip": "CPN\\Models\\CSJob.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAAUAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T02:26:32.959Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddCSJob.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\AddCSJob.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\AddCSJob.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\AddCSJob.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\AddCSJob.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T05:44:33.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAABwAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T10:02:14.341Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ViewFeedback.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\ViewFeedback.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\ViewFeedback.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\ViewFeedback.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\ViewFeedback.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T15:47:00.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Global.asax.cs",
+              "RelativeDocumentMoniker": "CPN\\Global.asax.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Global.asax.cs",
+              "RelativeToolTip": "CPN\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-07T10:03:10.037Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Web.config",
+              "RelativeDocumentMoniker": "CPN\\Web.config",
+              "ToolTip": "D:\\CPN\\CPN\\Web.config",
+              "RelativeToolTip": "CPN\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-08-14T03:22:35.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Contact.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Home\\Contact.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Home\\Contact.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Home\\Contact.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Home\\Contact.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T18:51:12.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T18:56:24.715Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "CPN\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "CPN\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAAL4AAAAAAAAAAADwv0IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-14T19:10:31.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "CPN\\Models\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "CPN\\Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T14:11:46.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "CPN\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "CPN\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T02:26:41.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "CPN\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "CPN\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAHoBAAAAAAAAAAAiwDoBAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T05:37:21.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "AddCTJob.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\AddCTJob.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\AddCTJob.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\AddCTJob.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\AddCTJob.cshtml",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAMAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-21T05:44:31.981Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "ManageJobs.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\ManageJobs.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\ManageJobs.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\ManageJobs.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\ManageJobs.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAIMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T15:41:26.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ManagePosts.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\ManagePosts.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\ManagePosts.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\ManagePosts.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\ManagePosts.cshtml",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T20:34:32.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "CPN\\App_Start\\BundleConfig.cs",
+              "ToolTip": "D:\\CPN\\CPN\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "CPN\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAzwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T13:23:15.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Account\\Register.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Account\\Register.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Account\\Register.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-22T17:31:45.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ManageQuestions.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\ManageQuestions.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\ManageQuestions.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\ManageQuestions.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\ManageQuestions.cshtml",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAAHoAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T02:21:05.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "CPN\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "CPN\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T14:11:13.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "CSResult.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\CSResult.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\CSResult.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\CSResult.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\CSResult.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAMwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-17T05:12:51.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Feedback.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\Feedback.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\Feedback.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\Feedback.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\Feedback.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T02:18:16.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "JobDetails.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\JobDetails.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\JobDetails.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\JobDetails.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\JobDetails.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAD0AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T19:51:01.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "PostDetails.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\PostDetails.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\PostDetails.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\PostDetails.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\PostDetails.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T02:18:01.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Posts.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\Posts.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\Posts.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\Posts.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\Posts.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAIwGcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T16:33:43.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "CTJob.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Models\\CTJob.cs",
+              "RelativeDocumentMoniker": "CPN\\Models\\CTJob.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Models\\CTJob.cs",
+              "RelativeToolTip": "CPN\\Models\\CTJob.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T02:26:29.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "CSJobQuestion.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Models\\CSJobQuestion.cs",
+              "RelativeDocumentMoniker": "CPN\\Models\\CSJobQuestion.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Models\\CSJobQuestion.cs",
+              "RelativeToolTip": "CPN\\Models\\CSJobQuestion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T02:26:30.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Feedback.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Models\\Feedback.cs",
+              "RelativeDocumentMoniker": "CPN\\Models\\Feedback.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Models\\Feedback.cs",
+              "RelativeToolTip": "CPN\\Models\\Feedback.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T02:26:24.441Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "JobViewModel.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Models\\JobViewModel.cs",
+              "RelativeDocumentMoniker": "CPN\\Models\\JobViewModel.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Models\\JobViewModel.cs",
+              "RelativeToolTip": "CPN\\Models\\JobViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T02:26:11.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Post.cs",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "CPN\\Models\\Post.cs",
+              "ToolTip": "D:\\CPN\\CPN\\Models\\Post.cs",
+              "RelativeToolTip": "CPN\\Models\\Post.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-23T02:25:39.171Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AddQuestion.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\AddQuestion.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\AddQuestion.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\AddQuestion.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\AddQuestion.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T02:24:28.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AddPost.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\AddPost.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\AddPost.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\AddPost.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\AddPost.cshtml",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAcwHAAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-19T14:44:03.452Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "EditStudent.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\EditStudent.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\EditStudent.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\EditStudent.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\EditStudent.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T02:22:40.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "EditVideo.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\EditVideo.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\EditVideo.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\EditVideo.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\EditVideo.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T02:22:39.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-23T02:18:27.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\Dashboard.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\Dashboard.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-13T19:39:37.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ManageStudents.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\ManageStudents.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\ManageStudents.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\ManageStudents.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\ManageStudents.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T15:37:56.025Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CTquiz.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\CTquiz.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\CTquiz.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\CTquiz.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\CTquiz.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-18T14:08:49.281Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CTResult.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\CTResult.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\CTResult.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\CTResult.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\CTResult.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAJ0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-17T05:13:10.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Quiz.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\Quiz.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\Quiz.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\Quiz.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\Quiz.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-22T07:08:48.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "QuizHistory.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Student\\QuizHistory.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Student\\QuizHistory.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Student\\QuizHistory.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Student\\QuizHistory.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-17T04:34:01.176Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "career.png - PNG [1536x1024, 24 bit, PNG]",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Images\\career.png",
+              "RelativeDocumentMoniker": "CPN\\Images\\career.png",
+              "ToolTip": "D:\\CPN\\CPN\\Images\\career.png - PNG [1536x1024, 24 bit, PNG]",
+              "RelativeToolTip": "CPN\\Images\\career.png - PNG [1536x1024, 24 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-08-18T17:12:11.501Z",
+              "EditorCaption": " - PNG [1536x1024, 24 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "AddCTQuestion.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\AddCTQuestion.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\AddCTQuestion.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\AddCTQuestion.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\AddCTQuestion.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFkAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T15:46:00.201Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "AddCSQuestion.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\Admin\\AddCSQuestion.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\Admin\\AddCSQuestion.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\Admin\\AddCSQuestion.cshtml",
+              "RelativeToolTip": "CPN\\Views\\Admin\\AddCSQuestion.cshtml",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAcwIcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-14T15:44:56.654Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\CPN\\CPN\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "CPN\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\CPN\\CPN\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "CPN\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-08-15T15:29:31.601Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

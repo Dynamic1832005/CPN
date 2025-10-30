@@ -1,0 +1,152 @@
+﻿@{
+    ViewBag.Title = "Login";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+<style>
+    body {
+        background: url('@Url.Content("~/Images/career.png")') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f0f2f5; /* fallback if image not loaded */
+    }
+
+    .login-container {
+        max-width: 400px;
+        margin: 60px auto;
+        padding: 30px 35px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+        .login-container h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+            .login-container h2 i {
+                margin-right: 10px;
+                color: #3498db;
+            }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+        .input-group input,
+        .input-group select {
+            width: 100%;
+            padding: 12px 40px 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+            background-color: white;
+            appearance: none;
+        }
+
+            .input-group input:focus,
+            .input-group select:focus {
+                border-color: #3498db;
+                outline: none;
+                box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            }
+
+        .input-group .input-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #3498db;
+            font-size: 18px;
+            pointer-events: none;
+        }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 14px;
+        background-color: #3498db;
+        border: none;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 15px;
+    }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+    .register-link {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+    }
+
+        .register-link a {
+            color: #3498db;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+            .register-link a:hover {
+                text-decoration: underline;
+            }
+
+    .error-message {
+        color: #e74c3c;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+</style>
+
+<div class="login-container">
+    <h2><i class="fas fa-sign-in-alt"></i> Login</h2>
+
+    @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="input-group">
+            <input type="text" name="username" placeholder="Username" required autocomplete="username" />
+            <span class="input-icon"><i class="fas fa-user"></i></span>
+        </div>
+
+        <div class="input-group">
+            <input type="password" name="password" placeholder="Password" required autocomplete="current-password" />
+            <span class="input-icon"><i class="fas fa-lock"></i></span>
+        </div>
+
+        <div class="input-group">
+            <select name="role" required>
+                <option value="">-- Select Role --</option>
+                <option value="Admin">Admin</option>
+                <option value="Student">Student</option>
+            </select>
+            <span class="input-icon"><i class="fas fa-user-tag"></i></span>
+        </div>
+
+        <input type="submit" value="Login" />
+    }
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="error-message">@ViewBag.Error</div>
+    }
+
+    <div class="register-link">
+        Don't have an account?
+        @Html.ActionLink("Register here", "Register", "Account")
+    </div>
+</div>

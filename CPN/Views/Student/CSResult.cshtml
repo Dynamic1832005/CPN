@@ -1,0 +1,204 @@
+﻿@{
+    ViewBag.Title = "CS Quiz Results";
+    Layout = "~/Views/Shared/_studentLayout.cshtml";
+
+    var results = ViewBag.Results as Dictionary<string, int>;
+    List<string> bestJobs = new List<string>();
+    int maxScore = 0;
+
+    if (results != null && results.Any())
+    {
+        maxScore = results.Values.Max();
+        bestJobs = results.Where(r => r.Value == maxScore).Select(r => r.Key).ToList();
+    }
+}
+
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h2.results-heading {
+        text-align: center;
+        color: #0d6efd;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 25px;
+    }
+
+    .result-summary {
+        background: #d1e7dd;
+        color: #0f5132;
+        border-radius: 12px;
+        padding: 25px;
+        margin-bottom: 30px;
+        box-shadow: 0 4px 12px rgba(15, 81, 50, 0.15);
+        font-size: 1.1rem;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 12px;
+    }
+
+        .result-summary strong {
+            font-weight: 700;
+            margin-right: 10px;
+        }
+
+    .job-link {
+        text-decoration: none;
+        background-color: #badbcc;
+        padding: 8px 16px;
+        border-radius: 8px;
+        color: #0f5132;
+        font-weight: 600;
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        transition: all 0.3s ease;
+    }
+
+        .job-link:hover {
+            background-color: #91c799;
+            transform: translateY(-2px);
+        }
+
+    /* 🔴 Modern Smart Error Box */
+    .error-message {
+        background: linear-gradient(135deg, #f8d7da, #f1aeb5);
+        color: #842029;
+        border-radius: 16px;
+        padding: 25px;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        box-shadow: 0 6px 14px rgba(132, 32, 41, 0.2);
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        animation: fadeIn 0.5s ease-in-out;
+    }
+
+    .error-message i {
+        font-size: 1.5rem;
+        color: #842029;
+    }
+
+    .error-text {
+        flex: 1;
+    }
+
+    .btn-reattempt {
+        background-color: #842029;
+        color: #fff;
+        padding: 10px 20px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+    }
+
+        .btn-reattempt:hover {
+            background-color: #6a1b22;
+            transform: translateY(-2px);
+        }
+
+    @@keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+    thead {
+        background-color: #0d6efd;
+        color: #fff;
+    }
+
+    th, td {
+        padding: 16px 20px;
+        text-align: left;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+
+    tbody tr:hover {
+        background-color: #e9ecef;
+    }
+</style>
+
+<h2 class="results-heading">
+    <i class="fas fa-chart-line"></i> Computer Science Quiz Results
+</h2>
+
+@if (results == null || !results.Any())
+{
+    <p style="text-align:center;">No results available.</p>
+}
+else
+{
+    if (maxScore <= 5)
+    {
+        <div class="error-message">
+            <i class="fas fa-exclamation-circle"></i>
+            <div class="error-text">
+                Sorry <strong>@Session["Username"]</strong>, your highest score is only <strong>@maxScore</strong>.
+                You need more practice before we can suggest career paths.
+            </div>
+            <a href="@Url.Action("CSquiz", "Student")" class="btn-reattempt">
+                <i class="fas fa-redo"></i> Reattempt Quiz
+            </a>
+        </div>
+    }
+    else
+    {
+        <div class="result-summary" role="region" aria-live="polite" aria-atomic="true">
+            <strong><i class="fas fa-star"></i> Best Fit Career Path(s) for @Session["Username"]:</strong>
+            @foreach (var job in bestJobs)
+            {
+                <a href="@Url.Action("JobDetails", "Student", new { title = job })" class="job-link">
+                    <i class="fas fa-briefcase"></i> @job
+                </a>
+            }
+            <small style="margin-left: auto;">Highest Score: @maxScore correct answer(s)</small>
+        </div>
+    }
+
+    <table>
+        <thead>
+            <tr>
+                <th><i class="fas fa-briefcase"></i> Job Title</th>
+                <th><i class="fas fa-check-circle"></i> Correct Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in results)
+            {
+                <tr>
+                    <td>@item.Key</td>
+                    <td>@item.Value</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

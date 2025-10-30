@@ -1,0 +1,145 @@
+﻿@model CPN.Models.AppUser
+@{
+    ViewBag.Title = "Register";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+<style>
+   body {
+    background: url('@Url.Content("~/Images/career.png")') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* fallback if image not loaded */
+}
+
+    .register-container {
+        max-width: 400px;
+        margin: 60px auto;
+        padding: 30px 35px;
+        background: #fff;
+        border-radius: 15px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+        .register-container h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            font-weight: 700;
+        }
+
+            .register-container h2 i {
+                margin-right: 10px;
+                color: #3498db;
+            }
+
+    /* Input group wrapper */
+    .input-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+        .input-group input {
+            width: 100%;
+            padding: 12px 40px 12px 15px; /* padding right for icon */
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+
+            .input-group input:focus {
+                border-color: #3498db;
+                outline: none;
+                box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+            }
+
+        /* Icon inside input on the right */
+        .input-group .input-icon {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #3498db;
+            font-size: 18px;
+            pointer-events: none;
+        }
+
+    input[type="submit"] {
+        width: 100%;
+        padding: 14px;
+        background-color: #3498db;
+        border: none;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 15px;
+    }
+
+        input[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+    .login-link {
+        margin-top: 25px;
+        text-align: center;
+        font-size: 14px;
+        color: #555;
+    }
+
+        .login-link a {
+            color: #3498db;
+            font-weight: 600;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+            .login-link a:hover {
+                text-decoration: underline;
+            }
+
+    .error-message {
+        color: #e74c3c;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+</style>
+
+<div class="register-container">
+    <h2><i class="fas fa-user-plus"></i> Register</h2>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="input-group">
+            @Html.TextBoxFor(m => m.Username, new { placeholder = "Username", autocomplete = "username" })
+            <span class="input-icon"><i class="fas fa-user"></i></span>
+            @Html.ValidationMessageFor(m => m.Username, "", new { @class = "error-message" })
+        </div>
+
+        <div class="input-group">
+            @Html.PasswordFor(m => m.Password, new { placeholder = "Password", autocomplete = "new-password" })
+            <span class="input-icon"><i class="fas fa-lock"></i></span>
+            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "error-message" })
+        </div>
+
+        <div class="input-group">
+            @Html.TextBoxFor(m => m.Email, new { placeholder = "Email", type = "email", autocomplete = "email" })
+            <span class="input-icon"><i class="fas fa-envelope"></i></span>
+            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "error-message" })
+        </div>
+
+        <input type="submit" value="Register" />
+    }
+
+    <div class="login-link">
+        Already registered?
+        @Html.ActionLink("Login here", "Login", "Account")
+    </div>
+</div>

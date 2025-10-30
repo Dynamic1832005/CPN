@@ -1,0 +1,133 @@
+﻿@model CPN.Models.Post
+@{
+    ViewBag.Title = "Add Post";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<!-- Font Awesome CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f5f7fa;
+    }
+
+    .container-custom {
+        max-width: 750px;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .card-custom {
+        border-radius: 18px;
+        overflow: hidden;
+        border: none;
+        background: #fff;
+        box-shadow: 0px 6px 20px rgba(0,0,0,0.12);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        .card-custom:hover {
+            transform: translateY(-4px);
+            box-shadow: 0px 10px 25px rgba(0,0,0,0.18);
+        }
+
+    .card-header-custom {
+        background: linear-gradient(135deg, #007bff, #0056b3);
+        color: white;
+        padding: 18px 25px;
+        font-size: 1.4rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        letter-spacing: 0.5px;
+    }
+
+    .card-body {
+        padding: 30px;
+    }
+
+    .form-label {
+        font-weight: 600;
+        margin-bottom: 8px;
+        display: block;
+        color: #333;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 12px 15px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        transition: border 0.3s ease, box-shadow 0.3s ease;
+        font-size: 0.95rem;
+    }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0px 0px 6px rgba(0, 123, 255, 0.4);
+            outline: none;
+        }
+
+    .btn-custom {
+        background: linear-gradient(90deg, #28a745, #218838);
+        border: none;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        padding: 12px 25px;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+        .btn-custom:hover {
+            background: linear-gradient(90deg, #218838, #1e7e34);
+            transform: translateY(-2px) scale(1.02);
+            box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+        }
+
+    .form-text {
+        font-size: 0.85rem;
+        color: #666;
+        margin-top: 5px;
+    }
+</style>
+
+<div class="container-custom">
+    <div class="card card-custom">
+        <div class="card-header-custom">
+            <i class="fa-solid fa-pen-to-square"></i> Add New Video 
+        </div>
+        <div class="card-body">
+            @using (Html.BeginForm("AddPost", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="mb-3">
+                    <label class="form-label"><i class="fa-solid fa-heading"></i> Title</label>
+                    @Html.TextBoxFor(m => m.Title, new { @class = "form-control", placeholder = "Enter video title..." })
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label"><i class="fa-solid fa-align-left"></i> Description</label>
+                    @Html.TextAreaFor(m => m.Description, new { @class = "form-control", rows = 5, placeholder = "Write your video description here..." })
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label"><i class="fa-solid fa-video"></i> Upload Video (Optional)</label>
+                    <input type="file" name="videoFile" class="form-control" accept="video/*" />
+                    <div class="form-text">Max size: 1GB | Format: MP4, AVI, WebM</div>
+                </div>
+
+                <button type="submit" class="btn-custom">
+                    <i class="fa-solid fa-check"></i>  Add Video
+                </button>
+            }
+        </div>
+    </div>
+</div>

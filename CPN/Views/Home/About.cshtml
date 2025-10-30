@@ -1,0 +1,142 @@
+﻿@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<style>
+    body {
+        background: url('@Url.Content("~/Images/career.png")') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .about-container {
+        max-width: 1200px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, 0.45); /* dark transparent container */
+        border-radius: 12px;
+        animation: fadeIn 0.8s ease-in-out;
+    }
+
+    @@keyframes fadeIn {
+        from { opacity: 0; transform: translateY(15px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .about-header {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .about-header h1 {
+        color: #ffff70; /* bright yellow title */
+        font-size: 1.8rem;
+        font-weight: 400;
+        text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+    }
+
+    .about-header h1 i {
+        margin-right: 10px;
+    }
+
+        .about-header .section-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #00c6ff; /* bright cyan */
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+        }
+
+    .feature-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 25px;
+        margin-top: 30px;
+    }
+
+    .feature-card {
+        background-color: rgba(255, 255, 255, 0.1); /* slightly transparent card */
+        border-radius: 12px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    }
+
+    .feature-card i {
+        font-size: 2rem;
+        color: #00d4ff; /* aqua icons */
+        margin-bottom: 15px;
+    }
+
+    .feature-card h4 {
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        color: #ffff70; /* yellow heading inside card */
+    }
+
+        .feature-card p {
+            color: #00c6ff; /* bright cyan */
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+    .section-title {
+        color: #ffff70; /* bright yellow section titles */
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    }
+
+    .section-text {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        color: #00c6ff; /* bright cyan */
+        text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+    }
+</style>
+
+<div class="about-container">
+    <div class="about-header">
+        <h1><i class="fas fa-user-graduate"></i> About IT Career Path Navigator</h1>
+        <p class="section-text">
+            Career Path Navigator helps students in Computer Science and Computer Technology
+            discover careers with quizzes, personalized suggestions, and resources for informed decisions.
+        </p>
+    </div>
+
+    <h3 class="section-title"><i class="fas fa-bullseye"></i> Our Mission</h3>
+    <p class="section-text">
+        To empower students to make informed decisions about their future careers by providing
+        resources, quizzes, and personalized recommendations based on their skills and interests.
+    </p>
+
+    <h3 class="section-title"><i class="fas fa-star"></i> Features</h3>
+    <div class="feature-cards">
+        <div class="feature-card">
+            <i class="fas fa-question-circle"></i>
+            <h4>Interactive Quizzes</h4>
+            <p>Engaging quizzes tailored for Computer Science and Computer Technology paths.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-briefcase"></i>
+            <h4>Career Guidance</h4>
+            <p>Personalized suggestions based on your quiz results and preferences.</p>
+        </div>
+        <div class="feature-card">
+            <i class="fas fa-users"></i>
+            <h4>Student-Friendly</h4>
+            <p>Simple, modern, and effective design built specifically for UCS students.</p>
+        </div>
+    </div>
+</div>

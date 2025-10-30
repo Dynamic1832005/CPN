@@ -1,0 +1,110 @@
+﻿@{
+    ViewBag.Title = "Admin Dashboard";
+    Layout = "~/Views/Shared/_adminLayout.cshtml";
+}
+
+<style>
+    .dashboard-header {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .info-box {
+        background-color: #f1f1f1;
+        padding: 20px;
+        border-radius: 12px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        text-align: center;
+    }
+
+        .info-box:hover {
+            transform: translateY(-5px);
+            background-color: #e8f0fe;
+        }
+
+        .info-box i {
+            font-size: 36px;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
+        .info-box h5 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .info-box a {
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            .info-box a:hover {
+                text-decoration: underline;
+            }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .admin-welcome {
+        margin-bottom: 10px;
+        font-size: 16px;
+        color: #666;
+    }
+</style>
+
+<div class="dashboard-header">
+    <i class="fas fa-user-shield"></i> Admin Dashboard
+</div>
+
+<div class="admin-welcome">
+    Welcome, <strong>@Session["Username"]</strong>!
+</div>
+
+<div class="grid-container">
+
+    <div class="info-box">
+        <i class="fas fa-briefcase"></i>
+        <h5>Manage CS Careers</h5>
+       
+    </div>
+
+    <div class="info-box">
+        <i class="fas fa-cogs"></i>
+        <h5>Manage CT Careers</h5>
+        
+    </div>
+
+    <div class="info-box">
+        <i class="fas fa-question-circle"></i>
+        <h5>Manage Questions</h5>
+        
+    </div>
+
+    <div class="info-box">
+        <i class="fas fa-video"></i>
+        <h5>Manage Videos</h5>
+       
+    </div>
+
+    <div class="info-box">
+        <i class="fas fa-comments"></i>
+        <h5>View Feedback</h5>
+       
+    </div>
+
+    <div class="info-box">
+        <i class="fas fa-users"></i>
+        <h5>View Students list</h5>
+        
+    </div>
+</div>
+<div><br/></div>

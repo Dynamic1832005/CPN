@@ -1,0 +1,174 @@
+﻿@model IEnumerable<CPN.Models.JobViewModel>
+
+@{
+    ViewBag.Title = "All Jobs";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: url('@Url.Content("~/Images/career.png")') no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+    }
+
+    .header-section {
+        text-align: center;
+        margin: 100px 0 30px;
+    }
+
+    .header-section h2 {
+        color: #ffff70; /* bright yellow for visibility */
+        font-size: 1.8rem;
+        font-weight: 500;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        text-shadow: 0 2px 6px rgba(0,0,0,0.8);
+    }
+
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+        max-width: 1100px;
+        margin: 0 auto 60px;
+        padding: 0 20px;
+    }
+
+    .job-card {
+        background: rgba(0, 0, 0, 0.45); /* darker glass effect for better contrast */
+        backdrop-filter: blur(8px);
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        text-align: center;
+        color: #fff;
+    }
+
+    .job-card:hover {
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 16px 32px rgba(0,0,0,0.5);
+    }
+
+    .job-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        color: #ffff70; /* bright yellow */
+        text-shadow: 0 1px 4px rgba(0,0,0,0.8);
+        padding: 10px 14px;
+        border-radius: 12px;
+        background: rgba(255,255,255,0.05); /* subtle glass */
+    }
+
+    .department-label {
+        font-weight: 600;
+        color: #00c6ff; /* bright cyan */
+        margin-bottom: 12px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+        font-size: 1rem;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.7);
+    }
+
+    .job-description {
+        color: #f0f0f0;
+        font-size: 0.95rem;
+        flex-grow: 1;
+        margin-bottom: 16px;
+        line-height: 1.5;
+    }
+
+    .video-container {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        margin-top: 14px;
+    }
+
+    .video-container iframe,
+    .video-container video {
+        width: 100%;
+        height: 100%;
+        border: none;
+        border-radius: 12px;
+    }
+
+    @@media (max-width: 768px) {
+        .cards-container {
+            gap: 16px;
+        }
+
+        .header-section h2 {
+            font-size: 2.2rem;
+        }
+    }
+
+    @@media (max-width: 480px) {
+        .job-title {
+            font-size: 1.1rem;
+            padding: 8px 10px;
+        }
+
+        .department-label {
+            font-size: 0.95rem;
+        }
+
+        .job-description {
+            font-size: 0.9rem;
+        }
+    }
+</style>
+
+<body>
+    <div class="header-section">
+        <h2><i class="fa fa-briefcase"></i> Available Careers</h2>
+    </div>
+
+    <div class="cards-container">
+        @foreach (var job in Model)
+        {
+            <div class="job-card">
+                <div class="job-title">
+                    <i class="fa fa-cogs"></i> @job.Title
+                </div>
+                <div class="department-label">
+                    <i class="fa fa-building"></i> @job.Department
+                </div>
+                <p class="job-description">@job.Description</p>
+
+                @if (!string.IsNullOrEmpty(job.VideoUrl))
+                {
+                    <div class="video-container">
+                        @if (job.VideoUrl.Contains("youtube.com") || job.VideoUrl.Contains("youtu.be"))
+                        {
+                            <iframe src="@job.VideoUrl" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                        }
+                        else
+                        {
+                            <video controls preload="metadata" src="@job.VideoUrl"></video>
+                        }
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</body>

@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Student Home";
+    Layout = "~/Views/Shared/_studentLayout.cshtml";
+}
+
+<style>
+    h3 {
+        color: #007bff;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        color: #555;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .welcome-text {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        color: #333;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    section {
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 123, 255, 0.15);
+        padding: 2rem;
+        width: 320px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+        section:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 8px 25px rgba(0, 123, 255, 0.3);
+        }
+
+        section h2 {
+            font-weight: 700;
+        }
+
+    .btn-attempt {
+        display: inline-block;
+        background-color: #007bff;
+        color: white !important;
+        padding: 0.6rem 1.6rem;
+        border-radius: 30px;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        font-size: 1rem;
+    }
+
+        .btn-attempt:hover {
+            background-color: #0056b3;
+            color: white !important;
+        }
+</style>
+
+<div class="row" role="main">
+    <h3 style="width: 100%; text-align: center;">
+        You can choose career by answering quiz
+    </h3>
+    <section aria-labelledby="csTitle">
+        <h3 id="csTitle">Computer Science</h3>
+        <p>Test your knowledge with quizzes focused on computer science careers.</p>
+        @Html.ActionLink("Attempt", "CSquiz", "Student", null, new { @class = "btn-attempt" })
+    </section>
+
+    <section aria-labelledby="ctTitle">
+        <h3 id="ctTitle">Computer Technology</h3>
+        <p>Test your knowledge with quizzes focused on computer technology careers.</p>
+        @Html.ActionLink("Attempt", "CTquiz", "Student", null, new { @class = "btn-attempt" })
+    </section>
+</div>

@@ -1,0 +1,94 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+
+<style>
+    body {
+        background: url('@Url.Content("~/Images/career.png")') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .contact-container {
+        max-width: 900px;
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .contact-container h1 {
+        color: #ffff70; /* bright yellow */
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    }
+
+    .contact-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
+
+    .contact-card {
+        background-color: rgba(0, 0, 0, 0.45); /* semi-transparent black */
+        border-radius: 12px;
+        padding: 25px;
+        text-align: center;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        color: #ffff70; /* yellow text */
+    }
+
+    .contact-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    }
+
+    .contact-card i {
+        font-size: 2rem;
+        color: #ffff70; /* yellow icons */
+        margin-bottom: 15px;
+    }
+
+    .contact-card h3 {
+        margin-bottom: 10px;
+        font-weight: 600;
+        font-size: 1.3rem;
+        color: #ffff70;
+    }
+
+    .contact-card p {
+        margin-bottom: 5px;
+        font-size: 1rem;
+        color: #ffff70;
+    }
+</style>
+
+<div class="contact-container">
+    <h1><i class="fas fa-phone"></i> Contact Us</h1>
+
+    <div class="contact-cards">
+        <div class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>Dynamic@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Phone</h3>
+            <p>+95 9 981 804 641</p>
+        </div>
+
+        <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Address</h3>
+            <p>University of Computer Studies</p>
+            <p>Monywa, Myanmar</p>
+        </div>
+    </div>
+</div>

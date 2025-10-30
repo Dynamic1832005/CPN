@@ -1,0 +1,122 @@
+﻿@model CPN.Models.JobViewModel
+@{
+    ViewBag.Title = Model.Title;
+    Layout = "~/Views/Shared/_studentLayout.cshtml";
+}
+
+<!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+<section class="job-details-container">
+    <header class="job-header">
+        <h1>
+            <i class="fas fa-network-wired"></i> @Model.Title
+        </h1>
+        <span class="department">@Model.Department</span>
+    </header>
+
+    <article class="job-description">
+        @Html.Raw(Model.Description.Replace("\n", "<br/>"))
+    </article>
+
+    @if (!string.IsNullOrEmpty(Model.VideoUrl))
+    {
+        <div class="video-wrapper">
+            @if (Model.VideoUrl.Contains("youtube.com") || Model.VideoUrl.Contains("youtu.be"))
+            {
+                <iframe src="@Model.VideoUrl" frameborder="0" allowfullscreen
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        loading="lazy"></iframe>
+            }
+            else
+            {
+                <video controls preload="metadata" src="@Model.VideoUrl"></video>
+            }
+        </div>
+    }
+</section>
+
+<style>
+.job-details-container {
+    max-width: 900px;
+    margin: 40px auto;
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+}
+
+.job-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+}
+
+.job-header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+    color: #3498db; /* Blue color for job title */
+}
+
+.job-header h1 i {
+    margin-right: 12px; /* space between icon and text */
+}
+
+.department {
+    color: blue;
+    font-weight: 500;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+
+.job-description {
+    font-size: 1.15rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 35px;
+    white-space: pre-wrap;
+}
+
+.video-wrapper {
+    position: relative;
+    padding-top: 56.25%; /* 16:9 ratio */
+    overflow: hidden;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+@@media (max-width: 600px) {
+    .job-details-container {
+        padding: 25px 20px;
+        margin: 20px;
+    }
+
+    .job-header h1 {
+        font-size: 2rem;
+    }
+
+    .department {
+        font-size: 1rem;
+        padding: 6px 14px;
+        margin-top: 8px;
+        font-weight: 500;
+    }
+}
+</style>

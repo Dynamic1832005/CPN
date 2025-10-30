@@ -1,0 +1,73 @@
+﻿@model CPN.Models.Feedback
+@{
+    ViewBag.Title = "Feedback";
+    Layout = "~/Views/Shared/_studentLayout.cshtml";
+}
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-6 col-md-8">
+            <div class="card shadow-sm border-0 rounded-4 p-4">
+                <h2 class="mb-4 text-center text-primary">
+                    <i class="fas fa-comment-dots"></i> Submit Feedback
+                </h2>
+
+                @if (TempData["Success"] != null)
+                {
+                    <div class="alert alert-success text-center">
+                        @TempData["Success"]
+                    </div>
+                }
+
+                @using (Html.BeginForm("Feedback", "Student", FormMethod.Post))
+                {
+                    @Html.AntiForgeryToken()
+
+                    <div class="mb-3">
+                        <label class="form-label"><i class="fas fa-user"></i> Name</label>
+                        @Html.TextBoxFor(m => m.Name, new { @class = "form-control", @readonly = "readonly" })
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label"><i class="fas fa-envelope"></i> Email</label>
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control", @readonly = "readonly" })
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label"><i class="fas fa-comment"></i> Your Feedback</label>
+                        @Html.TextAreaFor(m => m.Message, new { @class = "form-control", rows = 5, placeholder = "Type your feedback here..." })
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane me-2"></i> Submit
+                        </button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body {
+        background-color: #f5f6fa;
+    }
+
+    .card {
+        background-color: #fff;
+        border-radius: 16px;
+    }
+
+    .form-label i {
+        color: #0d6efd;
+        margin-right: 6px;
+    }
+
+    .btn-primary {
+        border-radius: 12px;
+        font-weight: 500;
+    }
+</style>
