@@ -1,0 +1,16 @@
+# Ignore Visual Studio temporary files and folders
+.vs/
+bin/
+obj/
+packages/
+*.user
+*.suo
+*.cache
+*.log
+*.tmp
+*.dbmdl
+*.jfm
+*.pdb
+*.exe
+*.dll
+*.vscode/
