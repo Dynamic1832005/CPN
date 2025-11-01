@@ -6,10 +6,10 @@ echo ===============================
 echo.
 
 REM ==== Set your GitHub info here ====
-set REPO_URL=https://github.com/Dynamic1832005/CPN.git
+set "REPO_URL=https://github.com/Dynamic1832005/IT-Career-Path-Navigator.git"
 set USER_NAME="Nyi Nyi Htwe"
 set USER_EMAIL="dynamic1832005@gmail.com"
-set PROJECT_PATH=D:\CPN
+set PROJECT_PATH=D:\IT Career Path Navigator
 
 REM ==== Change to project folder ====
 cd /d %PROJECT_PATH%
